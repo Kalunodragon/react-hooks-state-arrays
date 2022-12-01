@@ -3,10 +3,11 @@ import { spicyFoods, getNewRandomSpicyFood } from "../data";
 
 function SpicyFoodList() {
   const [foods, setFoods] = useState(spicyFoods);
+  console.log(setFoods)
 
   function handleAddFood() {
     const newFood = getNewRandomSpicyFood();
-    console.log(newFood);
+    console.log(newFood)
   }
 
   const foodList = foods.map((food) => (
